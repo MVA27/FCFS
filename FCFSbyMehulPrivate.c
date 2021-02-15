@@ -99,8 +99,9 @@ void main()
 
                     printf(" < %d > ",x->Process);
 
+                    //This is done to cover the gap of time when processor is idle
                     if(currentTime<i){
-                        currentTime++;
+                        currentTime++; //Potential Error: it should be currentTime = i
                     }
                     currentTime = currentTime + x->BurstTime;
                     printf(" %d ",currentTime);
