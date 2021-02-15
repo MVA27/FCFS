@@ -81,6 +81,9 @@ void main()
     for(i=0;i<=maximumArrivalTime;i++)
     {
         x=start;
+        
+        //Traverse the whole list of processes, And for every second print the process.
+        //i.e For t=0 , traverse through the list of processes and check which process has AT = 0 and print it
         while(x != NULL)
             {
                 if(x->ArrivalTime == i)
