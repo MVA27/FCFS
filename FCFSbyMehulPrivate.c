@@ -85,6 +85,7 @@ void main()
             {
                 if(x->ArrivalTime == i)
                 {
+                    //Calculate statre time. This is done once, Therefore once its done set flag=1 and execute this part only when flag=0 
                     if(flag == 0)
                     {
                         startTime = x->ArrivalTime;
